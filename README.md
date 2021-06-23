@@ -13,7 +13,7 @@
 
 ### Links
 
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/vuejs-sLra6rJlm)
 - Live Site URL: [Live](https://ip-address-tracker-vue.netlify.app/)
 
 
