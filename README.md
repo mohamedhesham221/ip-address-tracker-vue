@@ -25,6 +25,7 @@
 - Mobile-first workflow
 - Progressive Web Application
 - [Vue](https://vuejs.org/) - JS Framework
+- Leaflet.JS
 
 ## Author
 
