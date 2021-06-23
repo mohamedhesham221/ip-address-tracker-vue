@@ -37,6 +37,7 @@
 
 <script>
 import EventBus from '../main';
+import Api from '../../config';
 
 export default {
 
@@ -59,7 +60,7 @@ export default {
   },
   methods: {
     getIp() {
-      const url = `https://geo.ipify.org/api/v1?apiKey=at_R6IFupMeodEJCRe0m3uaZjMn0mzzQ&ipAddress=${this.ip}`;
+      const url = `https://geo.ipify.org/api/v1?apiKey=${Api}&ipAddress=${this.ip}`;
       // eslint-disable-next-line no-return-assign
       fetch(url).then((response) => response.json())
         // eslint-disable-next-line no-return-assign
