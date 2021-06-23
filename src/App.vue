@@ -1,28 +1,45 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container">
+      <ip-tracker />
+    </div>
+    <map-component />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import IpTracker from './components/IpTracker.vue';
+import MapComponent from './components/MapComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    IpTracker,
+    MapComponent,
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+:root {
+    --veryDarkGray: hsl(0, 0%, 17%);
+    --darkGray: hsl(0, 0%, 59%);
+    --white: #fff;
+    font-size: 18px;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+.container {
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
 </style>
