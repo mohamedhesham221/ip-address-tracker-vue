@@ -157,12 +157,15 @@ input[type=submit] {
   top: 0;
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
+  h2 {
+    font-size: calc(1rem + 8px);
+  }
   .ip-result {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 615px;
-    height: 100px;
+    width: 840px;
+    height: 130px;
     margin-top: 55px;
 }
   .ip-result div {
@@ -175,10 +178,13 @@ input[type=submit] {
     padding-left: 10px;
   }
   input[type=text] {
-    width: 330px;
+    width: 430px;
   }
   .ip-result div p:first-child {
-    margin-bottom: 8px;
+    margin-bottom: 17px;
+  }
+  .ip-result div p:last-child {
+    font-size: calc(1rem + 5px);
   }
 }
 </style>
